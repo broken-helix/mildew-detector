@@ -5,7 +5,8 @@ def summary_body():
 
     st.write(
         f"The 'Mildew Detector' is a machine learning project designed "
-        f"to detect if a host tree is infected with Powdery Mildew disease.\n\n"
+        f"to predict if a host tree is infected with Powdery Mildew "
+        f"disease.\n\n"
         f"The project uses an image of a leaf from the tree to determine the "
         f"probability of whether the tree is infected or healthy."
     )
