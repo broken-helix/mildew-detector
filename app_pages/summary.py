@@ -23,7 +23,8 @@ def summary_body():
         f"### Symptoms and Signs\n\n"
         f"Powdery mildew is marked by superficial, white, weblike growth on "
         f"leaves, shoots, or fruit.\n\n"
-        f"At first, infected leaves curl upward and by mid-season, the whitish "
+        f"At first, infected leaves curl upward and by mid-season, "
+        f"the whitish "
         f"fungus can be seen growing over the leaves and shoots, sometimes in "
         f"patches and other times covering most of the new growth.\n\n"
 
@@ -34,7 +35,6 @@ def summary_body():
         f"branches. Secondary spores produced in spring spread the fungus to "
         f"new growth."
     )
-    st.write("---")
 
     st.warning(
         f"### Business Requirements\n\n"
@@ -44,11 +44,9 @@ def summary_body():
         f"2 - An accurate prediction whether a given leaf is infected by "
         "powdery mildew or not."
     )
-    st.write("---")
 
     st.info(
         f"### Project Dataset\n\n"
         f"The available dataset contains images of 2104 healthy leaves and "
         f"2104 infected leaves."
     )
-    st.write("---")
