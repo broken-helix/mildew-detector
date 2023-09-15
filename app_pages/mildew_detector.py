@@ -16,24 +16,25 @@ def mildew_detector_body():
     st.write("---")
 
     st.info(
-        f"Upload pictures of cherry leaves to discover whether it's affected "
-        f"by powdery mildew or not and download a report of the examined "
-        f"leaves."
+        f"Upload an image (or multiple images) of cherry leaves to discover "
+        f"whether they may be infected with powdery mildew disease, "
+        f"and download a report of the results."
     )
 
     st.write(
         f"You can download a set of infected and healthy leaves for live "
-        f"prediction from [here] "
+        f"prediction [here] "
         f"(https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).")
 
     st.write("---")
 
     st.write(
-        f"**Upload a clear picture of a cherry leaf.** "
-        f"**You may select more than one.**"
+        f"**Upload a clear picture of a cherry leaf. "
+        f"You can drag and drop on online image or select from your device."
+        f"You may add multiple examples at once.**"
     )
     images_buffer = st.file_uploader(
-        ' ', type='jpg', accept_multiple_files=True)
+        ' ', accept_multiple_files=True)
 
     if images_buffer is not None:
         df_report = pd.DataFrame([])
