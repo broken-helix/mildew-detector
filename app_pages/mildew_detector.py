@@ -15,7 +15,7 @@ def mildew_detector_body():
     st.write("Mildew Detector")
     st.write("---")
 
-    st.info(
+    st.success(
         f"Upload an image (or multiple images) of cherry leaves to discover "
         f"whether they may be infected with powdery mildew disease, "
         f"and download a report of the results."

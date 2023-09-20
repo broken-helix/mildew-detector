@@ -36,7 +36,7 @@ def summary_body():
         f"new growth."
     )
 
-    st.warning(
+    st.error(
         f"### Business Requirements\n\n"
         f"The project satisfies two business requirements:\n\n"
         f"1 - A study to visually differentiate a healthy from an infected "
@@ -45,7 +45,7 @@ def summary_body():
         "powdery mildew or not."
     )
 
-    st.info(
+    st.success(
         f"### Project Dataset\n\n"
         f"The available dataset contains images of 2104 healthy leaves and "
         f"2104 infected leaves."

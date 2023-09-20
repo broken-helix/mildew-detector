@@ -65,7 +65,7 @@ def leaves_visualiser_body():
                  caption='Difference between average images')
 
     if st.checkbox("Image Montage"):
-        st.write("To refresh the montage, "
+        st.error("To refresh the montage, "
                  "click on the 'Create Montage' button")
         my_data_dir = 'inputs/mildew-dataset/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
