@@ -209,13 +209,13 @@ The project board can be viewed here: [Mildew Detector Project Board](link).
 - Other species.
 - Mobile application.
 
-<hr>
+***
 
 ## **TESTING**
 
 - Manual tests were carried out throughout the process and documented in the user stories as tasks.
 
-<hr>
+***
 
 ## **TECHNOLOGIES USED**
 
@@ -234,7 +234,7 @@ The project board can be viewed here: [Mildew Detector Project Board](link).
    streamlit
    jupyter notebooks
 
-<hr>
+***
 
 ## **DEPLOYMENT**
 
@@ -273,8 +273,7 @@ The project board can be viewed here: [Mildew Detector Project Board](link).
 
 For more information on cloning please read the github documentation [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-<hr>
-
+***
 
 ## **Credits**
 

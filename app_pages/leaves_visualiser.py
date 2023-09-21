@@ -34,7 +34,7 @@ def leaves_visualiser_body():
             f"outputs/{version}/avg_var_powdery_mildew.png")
         avg_uninfected = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
-        st.error(
+        st.warning(
             f"There are visible differences between infected and healthy "
             f"images.\n\n"
             f"Infected leaves generate average images which are lighter in "
@@ -56,7 +56,7 @@ def leaves_visualiser_body():
                    "average healthy leaves"):
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
-        st.error(
+        st.warning(
             f"Combining average images from healthy and infected leaf images "
             f"didn't show any noticeable patterns."
         )
@@ -65,7 +65,7 @@ def leaves_visualiser_body():
                  caption='Difference between average images')
 
     if st.checkbox("Image Montage"):
-        st.error("To refresh the montage, "
+        st.warning("To refresh the montage, "
                  "click on the 'Create Montage' button")
         my_data_dir = 'inputs/mildew-dataset/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
