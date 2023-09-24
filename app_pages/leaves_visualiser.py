@@ -12,10 +12,12 @@ from matplotlib.image import imread
 def leaves_visualiser_body():
 
     st.write(
-        f"### Leaf Image Variability\n\n"
-        f"Exploratory Data Analysis and visual display of the average "
+        f"## Leaves Visualiser\n\n"
+        f"Exploratory data analysis and visual display of the average "
         f"variability of healthy and infected leaf images."
     )
+
+    st.write("---")
 
     st.success(
         f"To determine if there are differences between infected and healthy "
@@ -25,11 +27,11 @@ def leaves_visualiser_body():
         f"average variability between labels and are displayed below.\n\n"
     )
 
+    st.write("---")
+
     version = 'v1'
     if st.checkbox(
-        "Difference between average and variability image"
-    ):
-
+            "Difference between average and variability image"):
         avg_powdery_mildew = plt.imread(
             f"outputs/{version}/avg_var_powdery_mildew.png")
         avg_uninfected = plt.imread(f"outputs/{version}/avg_var_healthy.png")
@@ -52,6 +54,8 @@ def leaves_visualiser_body():
             caption='healthy leaf - Average and Variability')
         st.write("---")
 
+    st.write("---")
+
     if st.checkbox("Differences between average infected and "
                    "average healthy leaves"):
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
@@ -64,9 +68,11 @@ def leaves_visualiser_body():
         st.image(diff_between_avgs,
                  caption='Difference between average images')
 
+    st.write("---")
+
     if st.checkbox("Image Montage"):
         st.warning("To refresh the montage, "
-                 "click on the 'Create Montage' button")
+                     "click on the 'Create Montage' button")
         my_data_dir = 'inputs/mildew-dataset/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
         label_to_display = st.selectbox(
@@ -75,7 +81,8 @@ def leaves_visualiser_body():
             image_montage(dir_path=my_data_dir + '/validation',
                           label_to_display=label_to_display,
                           nrows=8, ncols=3, figsize=(10, 25))
-        st.write("---")
+
+    st.write("---")
 
 
 def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
@@ -120,3 +127,5 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
     else:
         print("The label you selected doesn't exist.")
         print(f"The existing options are: {labels}")
+
+    st.write("---")

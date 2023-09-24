@@ -9,7 +9,7 @@ def project_hypothesis_body():
 
     version = 'v3'
 
-    st.write("Project Hypotheses")
+    st.write("## Project Hypotheses")
     st.write("---")
 
     st.success(
@@ -67,3 +67,5 @@ def project_hypothesis_body():
     st.warning(
         f"The model used for the prediction task has an accuracy of >97%."
     )
+
+    st.write("---")

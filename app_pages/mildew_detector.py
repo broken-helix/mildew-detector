@@ -12,27 +12,29 @@ from src.data_management import download_dataframe_as_csv
 
 def mildew_detector_body():
 
-    st.write("Mildew Detector")
+    st.write(
+        "## Disease Prediction\n\n"
+        "Upload an image (or multiple images) of cherry leaves to discover "
+        "whether they may be infected with powdery mildew disease, "
+        "and download a report of the results."
+    )
+
+    st.write("---")
+
+    st.warning(
+        "You can download a set of infected and healthy leaves for live "
+        "prediction [here] "
+        "(https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).")
+
     st.write("---")
 
     st.success(
-        f"Upload an image (or multiple images) of cherry leaves to discover "
-        f"whether they may be infected with powdery mildew disease, "
-        f"and download a report of the results."
+        "**Upload a clear picture of a cherry leaf.**\n\n"
+        "**You can drag and drop an online image or select from "
+        "your device.**\n\n"
+        "**You may add multiple examples at once.**"
     )
-
-    st.write(
-        f"You can download a set of infected and healthy leaves for live "
-        f"prediction [here] "
-        f"(https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).")
-
-    st.write("---")
-
-    st.write(
-        f"**Upload a clear picture of a cherry leaf. "
-        f"You can drag and drop on online image or select from your device."
-        f"You may add multiple examples at once.**"
-    )
+    
     images_buffer = st.file_uploader(
         ' ', accept_multiple_files=True)
 
@@ -67,3 +69,5 @@ def mildew_detector_body():
             st.table(df_report)
             st.markdown(download_dataframe_as_csv(
                 df_report), unsafe_allow_html=True)
+
+    st.write("---")

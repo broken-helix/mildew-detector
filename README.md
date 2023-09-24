@@ -6,7 +6,7 @@ with Powdery Mildew or not.
 
 [View the live project here](link).
 
-![Am I Responsive?](responsive-link.jpg)
+![Cherry Trees in blossom](/assets/images/pedro-sanz-fd4KegLUgOA.jpg)
 
 ***
 
@@ -21,6 +21,7 @@ with Powdery Mildew or not.
   - [*Data Visualisation*](#business-requirement-1)
   - [*Classification*](#business-requirement-2)
 - [**ML Business Case**](#ml-business-case)
+- [**Model Selection**](#model-selection)
 - [**Dashboard Design**](#dashboard-design)
   - [*Summary*](#summary)
   - [*Leaves Visualiser*](#leaves-visualiser)
@@ -37,7 +38,8 @@ with Powdery Mildew or not.
 
 ## **Dataset Content**
 
-The dataset is made up of 4208 images of single cherry tree leaves, taken from healthy trees and those infected with Powdery Mildew.
+The dataset is made up of 4208 images of single cherry tree leaves, taken from 
+healthy trees and those infected with Powdery Mildew.
 
 The dataset is sourced from
 [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves).
@@ -47,7 +49,9 @@ The dataset is sourced from
 ## **Business Requirements**
 
 The business requirements for the project are as follows:
-* **Business requirement 1** - *The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one infected with Powdery Mildew*.
+* **Business requirement 1** - 
+  *The client is interested in conducting a study to visually differentiate *
+  *a healthy cherry leaf from one infected with Powdery Mildew*.
 * **Business requirement 2 -** *The client is interested in predicting if a cherry leaf is healthy or infected with Powdery Mildew*.
 
 The fictional company, Farmy & Foods, has a number of cherry tree plantations and are experiencing problems with Powdery Mildew infections. Powdery Mildew is a disease is caused by *Podosphaera clandestina*, one of the common species of the Powdery Mildew group of fungi. The disease affects cherry trees, damages and stunts new leaf growth and can affect crop return in commercial settings. The same fungus reportedly causes Powdery Pildew in peaches, apricots, apples and pears.  
@@ -104,28 +108,51 @@ The dataset is a collection of cherry leaf images, provided by the client from t
 **Classification**
 
 *User Stories*
-* As a **client** I can **determine that the Machine Learning Model is accurate to at least 97%** so that **I can be sure the results are accurate**.
-* As a **client** I can **upload an image of a cherry tree leaf** so that **I can get an indication of whether it is infected or healthy**.
-* As a **client** I can **download a report** so that **I can view the results outside of the dashboard environment**.
+* As a **client** I can 
+  **determine that the Machine Learning Model is accurate to at least 97%** 
+  so that **I can be sure the results are accurate**.
+* As a **client** I can **upload an image of a cherry tree leaf** so that 
+  **I can get an indication of whether it is infected or healthy**.
+* As a **client** I can **download a report** so that 
+  **I can view the results outside of the dashboard environment**.
 
 *Tasks*
 * Build a binary classifier.
 * Validate the accuracy of the model with the validation set.
-* Display the results on the Machine Learning Performance page of the Streamlit dashboard.
+* Display the results on the Machine Learning Performance page of the Streamlit 
+  dashboard.
 * Use the model to create the Mildew Detector page of the Streamlit dashboard.
 
 ***
 
 ### **ML Business Case**
 
-* An ML model is required to predict if a leaf is infected with Powdery Mildew or not, based on the provided dataset. The problem requires a **supervised, 2-class, single-label, classification model**.
-* The ideal outcome is to provide the company with a faster and more reliable detector for Powdery Mildew detection.
+* An ML model is required to predict if a leaf is infected with Powdery Mildew 
+  or not, based on the provided dataset. The problem requires a 
+  **supervised, 2-class, single-label, classification model**.
+* The ideal outcome is to provide the company with a faster and more reliable 
+  detector for Powdery Mildew detection.
 * The model success metrics are an **accuracy of 97% or above** on the test set.
-* The model output is defined as a flag, indicating if the leaf has Powdery Mildew or not and the associated probability of being infected or not. The farmers will take a picture of a leaf and upload it to the App.
-* Heuristics: The current detection method is based on a manual inspection. Visual collection and inspection is slow and it leaves room to produce inaccurate diagnostics due to human error.
-* The training data to fit the model comes from the leaves database provided by Farmy & Foody company and uploaded on Kaggle. This dataset contains 4208 images of cherry leaves.
+* The model output is defined as a flag, indicating if the leaf has Powdery 
+  Mildew or not and the associated probability of being infected or not. 
+  The workers will take a picture of a leaf and upload it to the App.
+* Heuristics: The current detection method is based on a manual inspection. 
+  Visual collection and inspection is slow and it leaves room to produce 
+  inaccurate diagnostics due to human error.
+* The training data to fit the model comes from the leaves database provided by 
+  Farmy & Foody company and uploaded on Kaggle. This dataset contains 4208 
+  images of cherry leaves.
 
-***
+## **Model Selection**
+
+* As set out in the **ML Business Case**, the required model is a **supervised, 2-class, single-label, classification model**.
+* The selected model (v3) was one of three explored with the available data.
+* Each model used a different optimiser:
+  * v1 - adam
+  * v2 - Adadelta
+  * v3 - Adagrad
+* The selected model (v3) was chosen for its accuracy while not overfitting.
+* The models trialed are discussed further in the [Model Selection Readme](MODELSELECTION.md).
 
 ## **Dashboard Design**
 

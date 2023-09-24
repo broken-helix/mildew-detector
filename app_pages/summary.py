@@ -4,12 +4,15 @@ import streamlit as st
 def summary_body():
 
     st.write(
+        f"## Project Summary\n\n"
         f"The 'Mildew Detector' is a machine learning project designed "
         f"to predict if a host tree is infected with Powdery Mildew "
         f"disease.\n\n"
         f"The project uses an image of a leaf from the tree to determine the "
         f"probability of whether the tree is infected or healthy."
     )
+
+    st.write("---")
 
     st.success(
         f"### The Disease\n\n"
@@ -36,7 +39,9 @@ def summary_body():
         f"new growth."
     )
 
-    st.error(
+    st.write("---")
+
+    st.warning(
         f"### Business Requirements\n\n"
         f"The project satisfies two business requirements:\n\n"
         f"1 - A study to visually differentiate a healthy from an infected "
@@ -45,8 +50,12 @@ def summary_body():
         "powdery mildew or not."
     )
 
+    st.write("---")
+
     st.success(
         f"### Project Dataset\n\n"
         f"The available dataset contains images of 2104 healthy leaves and "
         f"2104 infected leaves."
     )
+
+    st.write("---")

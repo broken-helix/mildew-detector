@@ -6,7 +6,7 @@ from src.machine_learning.evaluate_clf import load_test_evaluation
 
 
 def ml_performance_body():
-    st.write("ML Performance")
+    st.write("## Machine Learning Performance")
     st.write("---")
 
     # Set model version
@@ -58,3 +58,5 @@ def ml_performance_body():
     # Display evaluation.pkl in dataframe
     st.dataframe(pd.DataFrame(load_test_evaluation(version),
                               index=['Loss', 'Accuracy']))
+
+    st.write("---")
