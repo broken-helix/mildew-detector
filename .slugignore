@@ -4,6 +4,7 @@ inputs/cherryleaves_dataset/cherry-leaves/train/healthy/*
 inputs/cherryleaves_dataset/cherry-leaves/train/powdery_mildew/*
 MODELSELECTION.md
 outputs/v2/*
+assets/*
 docs/*
 README.md
 .gitpod.dockerfile
