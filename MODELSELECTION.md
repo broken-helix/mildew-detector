@@ -186,6 +186,10 @@ Overfitting
 ![V1 Loss](/outputs/v1/model_training_losses.png)
 
     evaluation = model.evaluate(test_set)
+    43/43 [==============================]
+    18s 415ms/step
+    loss: 0.2574
+    accuracy: 0.9040
 
 
 ![V2 Confusion Matrix](/outputs/v2/confusion_matrix.png)
