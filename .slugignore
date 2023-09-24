@@ -3,4 +3,10 @@ inputs/cherryleaves_dataset/cherry-leaves/test/powdery_mildew/*
 inputs/cherryleaves_dataset/cherry-leaves/train/healthy/*
 inputs/cherryleaves_dataset/cherry-leaves/train/powdery_mildew/*
 MODELSELECTION.md
-v2/*
+outputs/v2/*
+docs/*
+README.md
+.gitpod.dockerfile
+.gitpod.yml
+app_pages/__pycache__/*
+assets/images/*
