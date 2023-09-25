@@ -10,9 +10,9 @@ from app_pages.mildew_detector import mildew_detector_body
 app = MultiPage(app_name="Mildew Detector")
 
 app.app_page("Summary", summary_body)
-app.app_page("Project Hypothesis", project_hypothesis_body)
 app.app_page("Leaves Visualiser", leaves_visualiser_body)
-app.app_page("Machine Learning Performance", ml_performance_body)
 app.app_page("Mildew Detector", mildew_detector_body)
+app.app_page("Project Hypothesis", project_hypothesis_body)
+app.app_page("Machine Learning Performance", ml_performance_body)
 
 app.run()
