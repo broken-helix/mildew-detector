@@ -70,7 +70,7 @@ def leaves_visualiser_body():
 
     if st.checkbox("Image Montage"):
         st.warning("To refresh the montage, "
-                     "click on the 'Create Montage' button")
+                   "click on the 'Create Montage' button")
         my_data_dir = 'inputs/mildew-dataset/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
         label_to_display = st.selectbox(

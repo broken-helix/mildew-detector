@@ -56,7 +56,9 @@ def project_hypothesis_body():
 
     st.success(
         f"### Hypothesis 2\n\n"
-        f"***It is possible to predict, with at least 97% accuracy, if an image of a cherry tree leaf is infected with powdery mildew.***\n\n"
+        f"***It is possible to predict, with at least 97% accuracy,*** "
+        "***if an image of a cherry tree leaf is infected with powdery*** "
+        "***mildew.***\n\n"
     )
 
     # Display evaluation.pkl in dataframe

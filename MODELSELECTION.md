@@ -1,8 +1,8 @@
 # **MODEL SELECTION**
 
 In order to find the best suited model to fit the data, different optimers 
-were explored.  Three optimisers were used, **adam** (v1), **Adadelta** (v2) 
-and **Adagrad** (v3).  Outlines of the models and their perfomamce are 
+were explored.  Three optimisers were used, **Adagrad** (v1), **Adadelta** (v2) 
+and **Adam** (v3).  Outlines of the models and their perfomamce are 
 detailed below.
 
 ![Cherry Trees in blossom](/assets/images/pedro-sanz-fd4KegLUgOA.jpg)
@@ -280,7 +280,7 @@ detailed below.
 
 ![V1 Confusion Matrix](/outputs/v3/confusion_matrix.png)
 
-### **v1 Conclusion**
+### **v3 Conclusion**
 
 Overfitting
 
