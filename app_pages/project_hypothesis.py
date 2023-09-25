@@ -7,7 +7,7 @@ from src.machine_learning.evaluate_clf import load_test_evaluation
 
 def project_hypothesis_body():
 
-    version = 'v3'
+    version = 'v1'
 
     st.write("## Project Hypotheses")
     st.write("---")

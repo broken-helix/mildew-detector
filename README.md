@@ -146,12 +146,12 @@ The dataset is a collection of cherry leaf images, provided by the client from t
 ## **Model Selection**
 
 * As set out in the **ML Business Case**, the required model is a **supervised, 2-class, single-label, classification model**.
-* The selected model (v3) was one of three explored with the available data.
+* The selected model (v1) was one of three explored with the available data.
 * Each model used a different optimiser:
-  * v1 - adam
+  * v1 - Adagrad
   * v2 - Adadelta
-  * v3 - Adagrad
-* The selected model (v3) was chosen for its accuracy while not overfitting.
+  * v3 - Adam
+* The selected model (v1) was chosen for its accuracy while not overfitting.
 * The models trialed are discussed further in the [Model Selection Readme](MODELSELECTION.md).
 
 ## **Dashboard Design**

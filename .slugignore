@@ -13,7 +13,6 @@ app_pages/__pycache__/*
 assets/images/*
 outputs/v1/model_training_losses.png
 outputs/v1/model_training_acc.png
-outputs/v1/mildew_detector_model.h5
 outputs/v1/confusion_matrix.png
 jupyter_notebooks/Modelling_and_Evaluation.ipynb
 jupyter_notebooks/Modelling_and_Evaluation_V2.ipynb

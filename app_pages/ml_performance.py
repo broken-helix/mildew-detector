@@ -10,7 +10,7 @@ def ml_performance_body():
     st.write("---")
 
     # Set model version
-    version = 'v3'
+    version = 'v1'
 
     st.write("## Train, Validation and Test Set: Labels Frequencies")
 

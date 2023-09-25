@@ -52,7 +52,6 @@ def mildew_detector_body():
             )
 
             version = 'v1'
-            version3 = 'v3'
             resized_img = resize_input_image(img=img_pil, version=version)
             pred_proba, pred_class = load_model_and_predict(
                 resized_img, version=version)

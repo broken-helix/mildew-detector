@@ -30,6 +30,10 @@ detailed below.
 
 ## **Model v1**
 
+- Adagrad is an optimizer with parameter-specific learning rates, which are 
+  adapted relative to how frequently a parameter gets updated during training. 
+  The more updates a parameter receives, the smaller the updates.
+
 ### **v1 Outline**
 
     def create_tf_model():
@@ -54,7 +58,7 @@ detailed below.
     model.add(Dense(1, activation = 'sigmoid'))
 
     model.compile(loss='binary_crossentropy',
-                  optimizer='adam',
+                  optimizer='adagrad',
                   metrics=['accuracy'])
     
     return model
@@ -109,8 +113,6 @@ detailed below.
 ![V1 Confusion Matrix](/outputs/v1/confusion_matrix.png)
 
 ### **v1 Conclusion**
-
-Overfitting
 
 ***
 
@@ -198,12 +200,7 @@ Overfitting
 
 ***
 
-
 ## **Model v3**
-
-- Adagrad is an optimizer with parameter-specific learning rates, which are 
-  adapted relative to how frequently a parameter gets updated during training. 
-  The more updates a parameter receives, the smaller the updates.
 
 ### **v3 Outline**
 
@@ -229,7 +226,7 @@ Overfitting
     model.add(Dense(1, activation = 'sigmoid'))
 
     model.compile(loss='binary_crossentropy',
-                  optimizer='adagrad',
+                  optimizer='adam',
                   metrics=['accuracy'])
     
     return model
@@ -281,11 +278,11 @@ Overfitting
     loss: 0.0169
     accuracy: 0.9953
 
-![V3 Confusion Matrix](/outputs/v3/confusion_matrix.png)
+![V1 Confusion Matrix](/outputs/v3/confusion_matrix.png)
 
-### **v3 Conclusion**
+### **v1 Conclusion**
 
-***
+Overfitting
 
 ## Conclusion
 
