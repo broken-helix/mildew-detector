@@ -34,7 +34,7 @@ def mildew_detector_body():
         "your device.**\n\n"
         "**You may add multiple examples at once.**"
     )
-    
+
     images_buffer = st.file_uploader(
         ' ', accept_multiple_files=True)
 
@@ -55,7 +55,7 @@ def mildew_detector_body():
             version3 = 'v3'
             resized_img = resize_input_image(img=img_pil, version=version)
             pred_proba, pred_class = load_model_and_predict(
-                resized_img, version=version3)
+                resized_img, version=version)
             plot_predictions_probabilities(pred_proba, pred_class)
 
             df_report = df_report.append(
