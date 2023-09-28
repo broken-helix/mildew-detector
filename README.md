@@ -4,7 +4,7 @@ The Mildew Detector is a project which employs machine learning to teach
 an algorithm to be able to make a prediction on whether a leaf is infected
 with Powdery Mildew or not.
 
-[View the live project here](link).
+[View the live project here](https://mildewdetector-ef3bd4a41238.herokuapp.com/).
 
 ![Cherry Trees in blossom](/assets/images/pedro-sanz-fd4KegLUgOA.jpg)
 
