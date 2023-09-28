@@ -11,8 +11,8 @@ def project_hypothesis_body():
 
     st.write(
         "## Project Hypotheses\n\n"
-        "The hypotheses for the project are driven by the Business" 
-        "Requirements."
+        "The hypotheses for the project are driven by the Business"
+        " Requirements."
     )
 
     st.write("---")
@@ -21,6 +21,7 @@ def project_hypothesis_body():
         "### Hypothesis 1\n\n"
         "***There is a visual difference in appearance between infected and "
         "healthy cherry tree leaves.***\n\n"
+        "This hypothesis links to Business Requirement 1."
     )
 
     st.warning(
@@ -64,6 +65,7 @@ def project_hypothesis_body():
         f"***It is possible to predict, with at least 97% accuracy,*** "
         "***if an image of a cherry tree leaf is infected with powdery*** "
         "***mildew.***\n\n"
+        "This hypothesis links to Business Requirement 2."
     )
 
     # Display evaluation.pkl in dataframe

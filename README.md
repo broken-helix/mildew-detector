@@ -12,6 +12,8 @@ with Powdery Mildew or not.
 
 ## **Table of Contents**
 
+---
+
 - [**Dataset Content**](#dataset-content)
 - [**Business Requirements**](#business-requirements)
   - [*Business Requirement 1*](business-requirement-1)
@@ -43,9 +45,11 @@ with Powdery Mildew or not.
 
 ## **Dataset Content**
 
+---
+
 The dataset is made up of 4208 images of single cherry tree leaves, taken from
-healthy trees and those infected with Powdery Mildew. Each has
-2104 images.
+healthy trees and those infected with Powdery Mildew. Each of these 'labels' 
+contains 2104 images, with an even split between healthy and infected.
 
 The dataset is sourced from
 [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves).
@@ -53,6 +57,8 @@ The dataset is sourced from
 ---
 
 ## **Business Requirements**
+
+---
 
 The business requirements for the project are as follows:
 
@@ -95,6 +101,8 @@ from their plantations.
 
 ## **Hypotheses**
 
+---
+
 ### **Hypothesis 1**
 
 *There is a visual difference in appearance between* 
@@ -103,6 +111,8 @@ from their plantations.
 - Business requirement 1 requires a study to visually differentiate a healthy
   leaf from an infected one.
 - The hypothesis will be investigated with an average image study.
+
+---
 
 ### **Hypothesis 2**
 
@@ -118,8 +128,15 @@ from their plantations.
 
 ## **Rationale**
 
-*Mapping the business requirements to the tasks.*  
-User stories can be found, along with Tasks, grouped into Epics matching the CRISP-DM workflow on the project board here: [Mildew Detector Project Board](https://github.com/users/broken-helix/projects/9)
+---
+
+The business requirements have been matched to the tasks using the CRISP-DM 
+workflow steps.  
+User Stories can be found, along with Tasks, grouped into Epics matching the 
+CRISP-DM workflow, on the project board here: 
+[Mildew Detector Project Board](https://github.com/users/broken-helix/projects/9)
+
+---
 
 ### **Business Requirement 1**
 
@@ -132,7 +149,7 @@ User stories can be found, along with Tasks, grouped into Epics matching the CRI
   **I can visually determine if leaves are infected or not**.
 - As a **client** I can
   **view the difference between average healthy and infected leaves** so that
-  **I can view any differences between samples**.
+  **I can compare leaves**.
 - As a **client** I can
   **display a montage of images of infected and healthy leaves**
   so that **I can see differences between them**.
@@ -175,6 +192,8 @@ User stories can be found, along with Tasks, grouped into Epics matching the CRI
 
 ## **ML Business Case**
 
+---
+
 - An ML model is required to predict if a leaf is infected with Powdery Mildew
   or not, based on the provided dataset. The problem is a binary one. The 
   leaf is either infected or healthy and requires a
@@ -196,6 +215,7 @@ User stories can be found, along with Tasks, grouped into Epics matching the CRI
 
 ## **Model Selection**
 
+---
 - As set out in the **ML Business Case**, the required model is
   a **supervised, 2-class, single-label, classification model**.
 - The selected model (v1) was one of three explored with the available data.
@@ -210,12 +230,14 @@ User stories can be found, along with Tasks, grouped into Epics matching the CRI
 ---
 
 ## **Dashboard Design**
-
+---
 ### **Navigation**
 
 Streamlit MultiPage was used to group 5 pages into one dashboard with a menu.
 
 ![Streamlit Menu](docs/navigation.jpg)
+
+---
 
 ### **Summary**
 
@@ -232,16 +254,21 @@ three sections:
 ![Business Requirements](docs/business-requirements.jpg)
 ![Project Dataset](docs/project-dataset.jpg)
 
+---
+
 ### **Leaves Visualiser**
 
 **This page handles Business Requirement 1**  
-The *leaves visualiser* page displays a brief summary and three checkboxes:
+The *leaves visualiser* page displays a brief summary and three checkboxes 
+which load up the relevant image display:
 
 - Difference between average and variability image.
 - Differences between average infected and average healthy leaves.
 - Image Montage of either healthy or infected leaves.
 
 ![Leaves Visualiser](docs/visualiser.jpg)
+
+---
 
 ### **Mildew Detector**
 
@@ -250,7 +277,7 @@ The *mildew detector* page shows an information section, together with
 instructions on how to use the detector and a link to sample images.
 When an image is uploaded, a report is generated which displays:
 
-- An display of the image.
+- A display of the image.
 - A message indicating the model prediction.
 - A probability chart.
 - A downloadable report.
@@ -258,12 +285,18 @@ When an image is uploaded, a report is generated which displays:
 ![Streamlit Detector](docs/detector.jpg)
 ![Detector Example](docs/detector-example.jpg)
 
+---
+
 ### **Hypotheses and Validation**
 
-Block for each hypothesis, describe conclusion and how validated
+The *hypothesis* page presents the hypotheses for the project, the 
+business requirement they are targeted towards, results of the analysis 
+and conclusions for each model.
 
 ![Streamlit Hypothesis 1](docs/hypothesis-1.jpg)
 ![Streamlit Hypothesis 2](docs/hypothesis-2.jpg)
+
+---
 
 ### **ML Performance**
 
@@ -277,6 +310,8 @@ The model history, accuracy, losses and confusion matrix are shown in the figure
 ---
 
 ## **CRISP-DM Workflow**
+
+---
 
 User stories were created to handle and plan aspects of the project which form 
 part of the business requirements of the client.  These were mapped to Epics covering the stages of the CRISP-DM workflow.
@@ -299,6 +334,8 @@ All stories and tasks are organised on the
 
 ## **Future Steps**
 
+---
+
 - The model could be trained on other species.
 - The model would be best incorporated into a mobile app to get instant 
   results in the field.
@@ -306,6 +343,8 @@ All stories and tasks are organised on the
 ---
 
 ## **Testing**
+
+---
 
 - All pages have been tested to ensure they load and any features work as 
   expected and no errors are produced.
@@ -319,6 +358,8 @@ All stories and tasks are organised on the
 ---
 
 ## **Bugs**
+
+---
 
 One image, infected with Powdery Mildew, was found to be predicted as healthy
 during testing. This is a part of machine learning, as overfitting is
@@ -337,6 +378,8 @@ prototype is deployed.
 
 ## **Technologies Used**
 
+---
+
 - [Git](https://git-scm.com/)<br>
   Used for version control alongside GitHub.
 - [GitHub](https://github.com/)<br>
@@ -350,6 +393,8 @@ prototype is deployed.
 
 ## **Deployment**
 
+---
+
 ### **Create Github Repository**
 
 - Log in to your Github account.
@@ -357,6 +402,8 @@ prototype is deployed.
 - Select the 'Code Institute' template from the 'Repository Template' menu.
 - Give your repository a name and select 'Create Repository'.
 - When the repository has been created select 'Gitpod' to open a new workspace.
+
+---
 
 ### **Heroku**
 
@@ -370,12 +417,16 @@ prototype is deployed.
 - Additionally, automatic deploys can be enabled for deployment after
   each push to Github.
 
+---
+
 ### **Fork this project**
 
 - Sign in to Github and go to my
   [repository](https://github.com/broken-helix/mildew-detector)
 - At the top of the page select 'Fork'.
 - The Fork will now be added to your repositories.
+
+---
 
 ### **Clone this project**
 
@@ -394,6 +445,8 @@ For more information on cloning please read the github documentation
 ---
 
 ## **Credits**
+
+---
 
 - [The Code Institutes](https://codeinstitute.net/) 'Malaria Detector'
   walkthrough project which inspired the main functionality of the application.

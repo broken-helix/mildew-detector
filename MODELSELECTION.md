@@ -1,8 +1,13 @@
 # **MODEL SELECTION**
 
-In order to find the best suited model to fit the data, different optimers 
-were explored.  Three optimisers were used, **Adagrad** (v1), **Adadelta** (v2) 
-and **Adam** (v3).  Outlines of the models and their perfomamce are 
+In order to find the best suited model to fit the data, different optimisers 
+were explored.  
+Three optimisers were used:
+- **Adagrad** (v1)
+- **Adadelta** (v2)
+- **Adam** (v3)  
+
+Outlines of the models and their perfomance are 
 detailed below.
 
 ![Cherry Trees in blossom](/assets/images/pedro-sanz-fd4KegLUgOA.jpg)
@@ -12,6 +17,7 @@ detailed below.
 ## **Table of Contents**
 
 - [**MODEL SELECTION**](#model-selection)
+  - [**Table of Contents**](#table-of-contents)
   - [**Model v1**](#model-v1)
     - [**v1 Outline**](#v1-outline)
     - [**v1 Performance**](#v1-performance)
@@ -24,16 +30,17 @@ detailed below.
     - [**v3 Outline**](#v3-outline)
     - [**v3 Performance**](#v3-performance)
     - [**v3 Conclusion**](#v3-conclusion)
-  - [**Conclusion**](#conclusion)
+  - [Concusion](#conclusion)
 
 ***
 
 ## **Model v1**
 
-[Adagrad](https://keras.io/api/optimizers/adagrad/) is an optimizer with 
+
+> [Adagrad](https://keras.io/api/optimizers/adagrad/) is an optimizer with 
 parameter-specific learning rates, which are adapted relative to how 
-frequently a parameter gets updated during training.  
-The more updates a parameter receives, the smaller the updates.
+frequently a parameter gets updated during training. The more updates a 
+parameter receives, the smaller the updates.
 
 ### **v1 Outline**
 
@@ -115,21 +122,21 @@ The more updates a parameter receives, the smaller the updates.
 
 ### **v1 Conclusion**
 
-Adagrad showed good performance in the accuracy and loss pots and the 
-confusion matrix showed a normal performance, with no zeros which may indicate overfitting.  
-It was able to achieve the desired 97% accuracy desired by the client.  
+* Adagrad showed good performance in the accuracy and loss plots and the 
+confusion matrix showed good results, with no signs of overfitting.  
+* The model was able to achieve the desired 97% accuracy desired by the client.  
+
 This model was used for the project.
 
 ***
 
 ## **model v2**
 
-[Adadelta](https://keras.io/api/optimizers/adadelta/) optimisation is a 
-stochastic gradient descent method that is based on adaptive learning 
-rate per dimension to address two drawbacks:
-
-- The continual decay of learning rates throughout training.
-- The need for a manually selected global learning rate.
+> [Adadelta](https://keras.io/api/optimizers/adadelta/) optimisation is a 
+> stochastic gradient descent method that is based on adaptive learning 
+> rate per dimension to address two drawbacks:
+> - The continual decay of learning rates throughout training.
+> - The need for a manually selected global learning rate.
 
 ### **v2 Outline**
 
@@ -211,17 +218,17 @@ rate per dimension to address two drawbacks:
 
 ### **v2 Conclusion**
 
-Adadelta struggled to achieve the desired accuracy and training for 18 epochs 
-resulted in a validation accuracy of only 90%.  
-This was demonstrated in the confusion matrix, where there were large numbers 
-of inaccurate predictions.
-Therefore, this model was discontinued.
+* Adadelta struggled to achieve the desired accuracy.
+* Training for 18 epochs resulted in a validation accuracy of only 90%.
+* The confusion matrix, shows large numbers of inaccurate predictions.
+
+This model was discontinued.
 
 ***
 
 ## **Model v3**
 
-[Adam](https://keras.io/api/optimizers/adam/) optimization is a stochastic 
+> [Adam](https://keras.io/api/optimizers/adam/) optimization is a stochastic 
 gradient descent method that is based on adaptive estimation of first-order 
 and second-order moments.
 
@@ -305,15 +312,16 @@ and second-order moments.
 
 ### **v3 Conclusion**
 
-As shown in the accuracy and loss chart, Adam results in a very steep slope 
-after only one epoch and rapidly achieves a very high accuracy.  However there 
-signs of overfitting, with the training and test plots being very closely 
-fitted.  
-This overfitting is further evidenced in the confusion matrix report, where 
+* In the accuracy and loss charts, Adam results in a very steep slope 
+after only one epoch and rapidly achieves a very high accuracy.
+* However there are signs of overfitting, with the training and test plots 
+  being very closely grouped.  
+* The confusion matrix report support this overfitting possibility, where 
 zero healthy leaves are predicted as infected.  
-Therefore this model was not selected.
+
+This model was not selected.
 
 ## Conclusion
 
-Adagrad (v1) was selected, for it's accuracy and good performance during 
+Adagrad (v1) was selected, for its accuracy and good performance during 
 training.
