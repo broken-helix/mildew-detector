@@ -12,7 +12,7 @@ detailed below.
 
 ![Cherry Trees in blossom](/assets/images/pedro-sanz-fd4KegLUgOA.jpg)
 
-***
+---
 
 ## **Table of Contents**
 
@@ -32,7 +32,7 @@ detailed below.
     - [**v3 Conclusion**](#v3-conclusion)
   - [Concusion](#conclusion)
 
-***
+---
 
 ## **Model v1**
 
@@ -71,7 +71,7 @@ parameter receives, the smaller the updates.
     
     return model
 
-***
+---
 
     Model: "sequential"
     _________________________________________________________________
@@ -128,7 +128,7 @@ confusion matrix showed good results, with no signs of overfitting.
 
 This model was used for the project.
 
-***
+---
 
 ## **model v2**
 
@@ -167,7 +167,7 @@ This model was used for the project.
     
         return model
 
-***
+---
 
     Model: "sequential"
     _________________________________________________________________
@@ -224,7 +224,7 @@ This model was used for the project.
 
 This model was discontinued.
 
-***
+---
 
 ## **Model v3**
 
@@ -261,7 +261,7 @@ and second-order moments.
     
     return model
 
-***
+---
 
     Model: "sequential"
     _________________________________________________________________
