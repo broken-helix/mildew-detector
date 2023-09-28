@@ -124,8 +124,6 @@ User Stories can be found, along with Tasks, grouped into Epics matching the
 CRISP-DM workflow, on the project board here: 
 [Mildew Detector Project Board](https://github.com/users/broken-helix/projects/9)
 
----
-
 ### **Business Requirement 1**
 
 #### **Data Visualisation**
@@ -151,8 +149,6 @@ CRISP-DM workflow, on the project board here:
   dashboard.
 - Create an image montage viewer on the Streamlit dashboard to display a
   selection of either healthy or infected leaf images.
-
----
 
 ### **Business Requirement 2**
 
@@ -222,8 +218,6 @@ Streamlit MultiPage was used to group 5 pages into one dashboard with a menu.
 
 ![Streamlit Menu](docs/navigation.jpg)
 
----
-
 ### **Summary**
 
 The *summary* page contains a brief summary of the project, together with
@@ -239,8 +233,6 @@ three sections:
 ![Business Requirements](docs/business-requirements.jpg)
 ![Project Dataset](docs/project-dataset.jpg)
 
----
-
 ### **Leaves Visualiser**
 
 **This page handles Business Requirement 1**  
@@ -252,8 +244,6 @@ which load up the relevant image display:
 - Image Montage of either healthy or infected leaves.
 
 ![Leaves Visualiser](docs/visualiser.jpg)
-
----
 
 ### **Mildew Detector**
 
@@ -270,8 +260,6 @@ When an image is uploaded, a report is generated which displays:
 ![Streamlit Detector](docs/detector.jpg)
 ![Detector Example](docs/detector-example.jpg)
 
----
-
 ### **Hypotheses and Validation**
 
 The *hypothesis* page presents the hypotheses for the project, the 
@@ -280,8 +268,6 @@ and conclusions for each model.
 
 ![Streamlit Hypothesis 1](docs/hypothesis-1.jpg)
 ![Streamlit Hypothesis 2](docs/hypothesis-2.jpg)
-
----
 
 ### **ML Performance**
 
