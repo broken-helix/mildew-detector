@@ -10,19 +10,23 @@ from matplotlib.image import imread
 def leaves_visualiser_body():
 
     st.write(
-        f"## Leaves Visualiser\n\n"
-        f"Exploratory data analysis and visual display of the average "
-        f"variability of healthy and infected leaf images."
+        "## Leaves Visualiser\n\n"
+        "Exploratory data analysis and visual display of the average "
+        "variability of healthy and infected leaf images."
+    )
+
+    st.error(
+        "This page handles Business Requirement 1."
     )
 
     st.write("---")
 
     st.success(
-        f"To determine if there are differences between infected and healthy "
-        f"leaves, and prepare images for machine learning, "
-        f"Exploratory Data Analysis was carried out.\n\n"
-        f"Images from both healthy and infected leaves were assessed for "
-        f"average variability between labels and are displayed below.\n\n"
+        "To determine if there are differences between infected and healthy "
+        "leaves, and prepare images for machine learning, "
+        "Exploratory Data Analysis was carried out.\n\n"
+        "Images from both healthy and infected leaves were assessed for "
+        "average variability between labels and are displayed below.\n\n"
     )
 
     st.write("---")
@@ -35,13 +39,13 @@ def leaves_visualiser_body():
         avg_uninfected = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
         st.warning(
-            f"There are visible differences between infected and healthy "
-            f"images.\n\n"
-            f"Infected leaves generate average images which are lighter in "
-            f"appearance in the centre.\n\n"
-            f"Infected leaves show a cloudier appearance in the centre in "
-            f"variability displays, indicating greater variability than the "
-            f"dark centres of the healthy images "
+            "There are visible differences between infected and healthy "
+            "images.\n\n"
+            "Infected leaves generate average images which are lighter in "
+            "appearance in the centre.\n\n"
+            "Infected leaves show a cloudier appearance in the centre in "
+            "variability displays, indicating greater variability than the "
+            "dark centres of the healthy images "
         )
 
         st.image(
@@ -59,8 +63,8 @@ def leaves_visualiser_body():
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
         st.warning(
-            f"Combining average images from healthy and infected leaf images "
-            f"didn't show any noticeable patterns."
+            "Combining average images from healthy and infected leaf images "
+            "didn't show any noticeable patterns."
         )
 
         st.image(diff_between_avgs,

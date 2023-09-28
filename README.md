@@ -31,7 +31,7 @@ with Powdery Mildew or not.
   - [*Mildew Detector*](#mildew-detector)
   - [*Hypotheses and Validation*](#hypotheses-and-validation)
   - [*ML Performance*](#ml-performance)
-- [**CRISP-DM**](#crisp-dm)
+- [**CRISP-DM Workflow**](#crisp-dm-workflow)
 - [**Future Developments**](#future-developments)
 - [**Testing**](#testing)
 - [**Bugs**](#bugs)
@@ -213,7 +213,7 @@ User stories can be found, along with Tasks, grouped into Epics matching the CRI
 
 ### **Navigation**
 
-Streamlit MultiPage was used to 5 group pages into one dashboard with a menu.
+Streamlit MultiPage was used to group 5 pages into one dashboard with a menu.
 
 ![Streamlit Menu](docs/navigation.jpg)
 
@@ -234,7 +234,7 @@ three sections:
 
 ### **Leaves Visualiser**
 
-**This page handles Business Requirement 1**
+**This page handles Business Requirement 1**  
 The *leaves visualiser* page displays a brief summary and three checkboxes:
 
 - Difference between average and variability image.
@@ -245,7 +245,7 @@ The *leaves visualiser* page displays a brief summary and three checkboxes:
 
 ### **Mildew Detector**
 
-**This page handles Business Requirement 2**
+**This page handles Business Requirement 2**  
 The *mildew detector* page shows an information section, together with
 instructions on how to use the detector and a link to sample images.
 When an image is uploaded, a report is generated which displays:
@@ -276,7 +276,7 @@ The model history, accuracy, losses and confusion matrix are shown in the figure
 
 ---
 
-## **CRISP-DM**
+## **CRISP-DM Workflow**
 
 User stories were created to handle and plan aspects of the project which form 
 part of the business requirements of the client.  These were mapped to Epics covering the stages of the CRISP-DM workflow.
@@ -284,7 +284,7 @@ part of the business requirements of the client.  These were mapped to Epics cov
 Additionally, a series of tasks were created, covering the main steps in 
 building the project.
 
-The Epics cover:  
+The Epics cover the stages of CRISP_DM:  
   
 - Business Understanding
 - Data Understanding
@@ -292,7 +292,7 @@ The Epics cover:
 - Modelling
 - Validation
 
-All stories and tasks ae organised on the 
+All stories and tasks are organised on the 
 [project board](https://github.com/users/broken-helix/projects/9)
 
 ---
@@ -314,6 +314,8 @@ All stories and tasks ae organised on the
 - The streamlit pages have been copied into the CI PEP8 checker and all code 
   passed with no errors.
 
+![PEP8 Checker Result](docs/pep8example.jpg)
+
 ---
 
 ## **Bugs**
@@ -329,6 +331,8 @@ These are future conversations to have with the client once the dashboard
 prototype is deployed.
 
 ![Misclassified Infected Leaf](docs/infected-misclassification.jpg)
+
+---
 
 ## **Technologies Used**
 
@@ -396,6 +400,13 @@ For more information on cloning please read the github documentation
   encountered during development.
 - [W3Schools - Python](https://www.w3schools.com/python/) for reference
   and research.
-- Mo (<https://github.com/link>) - Code Institute mentor.
+- My [Code Institute mentor](https://github.com/mshami).
+- I was able to get some inspiration about potential structures for the project 
+  from the following previous student repositories, supplied by my mentor for 
+  information.
+  - [Lemon Quality Control](https://github.com/Dante-Cadiz/lemon-qualitycontrol).
+  - [Cherry Powdery Mildew Detector](https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector)
+- Background information on the disease was sourced from: 
+  https://extension.psu.edu/powdery-mildew-of-cherry-and-plum-in-home-fruit-plantings
 
 In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
