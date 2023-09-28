@@ -1,4 +1,4 @@
-# **Mildew Detector - Introduction**
+# **Mildew Detector**
 
 The Mildew Detector is a project which employs machine learning to teach
 an algorithm to be able to make a prediction on whether a leaf is infected
