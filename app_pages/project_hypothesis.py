@@ -9,25 +9,30 @@ def project_hypothesis_body():
 
     version = 'v1'
 
-    st.write("## Project Hypotheses")
+    st.write(
+        "## Project Hypotheses\n\n"
+        "The hypotheses for the project are driven by the Business" 
+        "Requirements."
+    )
+
     st.write("---")
 
     st.success(
-        f"### Hypothesis 1\n\n"
-        f"***There is a visual difference in appearance between infected and "
-        f"healthy cherry tree leaves.***\n\n"
+        "### Hypothesis 1\n\n"
+        "***There is a visual difference in appearance between infected and "
+        "healthy cherry tree leaves.***\n\n"
     )
 
     st.warning(
-        f"Average infected leaf images show a cloudy appearance in the image "
-        f"centre and have a uniform appearance in average variability images."
+        "Average infected leaf images show a cloudy appearance in the image "
+        "centre and have a uniform appearance in average variability images."
     )
     # Load average and variability images
     avg_powdery_mildew = plt.imread(
-        f"outputs/v1/avg_var_powdery_mildew.png"
+        "outputs/v1/avg_var_powdery_mildew.png"
     )
     avg_uninfected = plt.imread(
-        f"outputs/v1/avg_var_healthy.png"
+        "outputs/v1/avg_var_healthy.png"
     )
 
     # Display infected average and variability images
@@ -37,8 +42,8 @@ def project_hypothesis_body():
     )
 
     st.warning(
-        f"Average healthy leaf images display a clear patch in the image "
-        f"centre and a dark centre in average variability images."
+        "Average healthy leaf images display a clear patch in the image "
+        "centre and a dark centre in average variability images."
     )
 
     # Display healthy average and variability images
@@ -48,14 +53,14 @@ def project_hypothesis_body():
     )
 
     st.warning(
-        f"There are visible differences between average infected and healthy "
-        f"images."
+        "There are visible differences between average infected and healthy "
+        "images."
     )
 
     st.write("---")
 
     st.success(
-        f"### Hypothesis 2\n\n"
+        "### Hypothesis 2\n\n"
         f"***It is possible to predict, with at least 97% accuracy,*** "
         "***if an image of a cherry tree leaf is infected with powdery*** "
         "***mildew.***\n\n"

@@ -29,6 +29,13 @@ def ml_performance_body():
     # Display label distribution pie chart
     st.image(labels_distribution, caption='Sets distribution')
 
+    st.warning(
+        "The plots show the proportions of the split data: \n\n"
+        f"Train: 70%\n\n"
+        f"Test: 20%\n\n"
+        f"Validation: 10%\n\n"
+    )
+
     st.write("---")
 
     st.write("## Model History")
@@ -42,6 +49,11 @@ def ml_performance_body():
     # Display model training and validation loss plot
     st.image(model_loss, caption='Model Training Losses')
 
+    st.warning(
+        "The plots show comparable results for Train and Test sets without "
+        "overfitting."
+    )
+
     st.write("---")
 
     st.write("## Confusion Matrix")
@@ -51,6 +63,10 @@ def ml_performance_body():
     # Display confusion matrix
     st.image(model_cm, caption='Confusion Matrix')
 
+    st.warning(
+        "The confusion matrix shows a good accuracy in predicting status. "
+    )
+
     st.write("---")
 
     st.write("## Generalised Performance on Test Set")
@@ -58,5 +74,9 @@ def ml_performance_body():
     # Display evaluation.pkl in dataframe
     st.dataframe(pd.DataFrame(load_test_evaluation(version),
                               index=['Loss', 'Accuracy']))
+
+    st.warning(
+        f"The evaluation indicates an accuracy of >97%."
+    )
 
     st.write("---")

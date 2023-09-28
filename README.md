@@ -323,7 +323,8 @@ All stories and tasks are organised on the
 One image, infected with Powdery Mildew, was found to be predicted as healthy
 during testing. This is a part of machine learning, as overfitting is
 avoided while trying to get a high accuracy. The confusion matrix shows 
-that 8 out of 414 images of infected leaves were predicted to be healthy.  However, it may be possible to further tune the model to reduce false
+that 8 out of 422 images of infected leaves were predicted to be healthy.  
+However, it may be possible to further tune the model to reduce false
 predictions, if the client feels this is more important.  Additionally, it may 
 be possible to require 2-3 leaf images per tree, to reduce the likelihood of 
 false readings for infected leaves.  
@@ -408,5 +409,5 @@ For more information on cloning please read the github documentation
   - [Cherry Powdery Mildew Detector](https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector)
 - Background information on the disease was sourced from: 
   https://extension.psu.edu/powdery-mildew-of-cherry-and-plum-in-home-fruit-plantings
-
-In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
+- The main image is by Pedro Sanz, sourced from 
+  [Unsplash](https://unsplash.com/photos/fd4KegLUgOA).
