@@ -10,3 +10,6 @@ cloudinary_python.txt
 kaggle.json
 inputs/mildew-dataset/cherry-leaves/test
 inputs/mildew-dataset/cherry-leaves/train
+.Trash-1000*
+.ipynb_checkpoints*
+.devcontainer*
